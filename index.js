@@ -1,0 +1,44 @@
+//console.log(`Hello`);
+//console.log(`World!`);
+
+//window.alert(`This is an alert!`);
+//window.alert(`This is another alert!`);
+
+//This is a comment. 
+
+/* 
+    This is a 
+    multiline
+    comment
+*/
+
+/*
+document.getElementById("myH1").textContent="Hello";
+document.getElementById("myP").textContent="I like pizza!";
+*/
+
+let firstName = "Mariana";
+let firstNameType = typeof firstName;
+console.log(typeof firstNameType);
+console.log(`Your name is ${firstName}.
+The JS variable that stores your name is called firstName. 
+It's of type ${firstNameType}.`);
+
+document.getElementById("p1").textContent=`Your name is ${firstName}.`;
+document.getElementById("p2").textContent="The JS variable that stores your name is called firstName.";
+document.getElementById("p3").textContent=`It's of type ${firstNameType}.`;
+
+
+/*
+User input --> Easy way = window prompt
+*/
+/*
+let username;
+username= window.prompt("Please enter you username: ");
+console.log(username);
+*/
+
+/*
+User input --> HTML Textbox = Professional way
+
+
