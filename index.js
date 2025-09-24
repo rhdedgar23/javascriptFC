@@ -12,11 +12,14 @@
     comment
 */
 
+
 /*
 document.getElementById("myH1").textContent="Hello";
 document.getElementById("myP").textContent="I like pizza!";
 */
 
+
+/* 
 let firstName = "Mariana";
 let firstNameType = typeof firstName;
 console.log(typeof firstNameType);
@@ -27,6 +30,7 @@ It's of type ${firstNameType}.`);
 document.getElementById("p1").textContent=`Your name is ${firstName}.`;
 document.getElementById("p2").textContent="The JS variable that stores your name is called firstName.";
 document.getElementById("p3").textContent=`It's of type ${firstNameType}.`;
+*/
 
 
 /*
@@ -40,5 +44,25 @@ console.log(username);
 
 /*
 User input --> HTML Textbox = Professional way
+*/
+/*
+let username;
+document.getElementById("mySubmit").onclick= function(){
+    username= document.getElementById("myText").value;
+    //console.log(username);
+    document.getElementById("myH1").textContent= `Hello ${username}`;
+}
+*/
 
-
+/*
+Type Conversion
+*/
+let age;
+document.getElementById("mySubmit").onclick= function(){
+    age= document.getElementById("myText").value;
+    //Without conversion
+    console.log(`Without conversion.\nAge: ${age} (${typeof age})`);
+    //With conversion
+    age=Number(age);
+    console.log(`\nWith Conversion. Age: ${age} (${typeof age})`);
+}
