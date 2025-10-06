@@ -57,6 +57,10 @@ document.getElementById("mySubmit").onclick= function(){
 /*
 Type Conversion
 */
+//Number()
+//String()
+//Boolean()
+/*
 let age;
 document.getElementById("mySubmit").onclick= function(){
     age= document.getElementById("myText").value;
@@ -66,3 +70,25 @@ document.getElementById("mySubmit").onclick= function(){
     age=Number(age);
     console.log(`\nWith Conversion. Age: ${age} (${typeof age})`);
 }
+*/
+
+/*
+CONSTANTS
+*/
+// constant --> a variable that can't be changed. 
+// Following convention, constants are capitalized. 
+const PI= 3.14159;
+let radius;
+let circumference;
+
+//If we attept to change the constant PI, javascript will throw exception. 
+//PI=400;
+
+document.getElementById("mySubmitButton").onclick= function(){
+    radius= Number(document.getElementById("myInput").value);
+    circumference= 2*PI*radius;
+
+    document.getElementById("myP2").textContent= `The circumference of the circle of radius ${radius} is ${circumference} cm.`;
+}
+
+
